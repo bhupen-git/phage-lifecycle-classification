@@ -6,7 +6,7 @@ title: Phage Lifecycle Project
 ![Phage cover](assets/images/phage-bacteriophage-main.jpg)
 # 🧬 Phage Lifecycle Classification
 
-Welcome to my data science project exploring bacteriophage life cycles using machine learning.
+Welcome to my data science project exploring bacteriophage life cycles using Large Language Models and machine learning. This project was part of the Phagos x AWS hackathon held on the 14th and the 15th of May 2025 (https://hackathon.phagos.org/).
 
 ## 📘 Project Notebook
 
@@ -15,18 +15,18 @@ Welcome to my data science project exploring bacteriophage life cycles using mac
 
 ## 📊 Highlights
 
-- Used k-mer frequency for feature extraction
-- Trained an XGBoost classifier to predict lifecycle phase
+- Handling fasta files with DNA sequences.
+- Used LLMs for proteins (Evolutionary Scale Modelling) to extract embeddings from amino acid sequences.
+- Trained an XGBoost classifier to predict the type of lifecycle.
 - Achieved ~92% model accuracy
-- Visualized model performance with confusion matrices and ROC curves
+- Visualized model performance with confusion matrices.
 
 ## 🔧 Tools Used
 
-- Python + Jupyter
-- scikit-learn
-- XGBoost
-- Pandas, Matplotlib
-- BioPython
+- **Biology libraries** : BioPython, Prodigal
+- **Data handling and visualization** : Pandas, Matplotlib
+- **Deep learning** : fair-esm
+- **Machine learning** : XGBoost, scikit-learn 
 
 ---
 
