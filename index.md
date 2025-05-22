@@ -28,13 +28,13 @@ Welcome to my data science project exploring bacteriophage life cycles using Lar
 - **Deep learning** : fair-esm
 - **Machine learning** : XGBoost, scikit-learn
 
-## Bacteriphages
+## Bacteriophages
 
-### What are they?
+### **What are they?**
 
 Bacteriophages, or simply phages, are viruses that specifically infect and replicate within bacteria. They are among the most abundant biological entities on Earth, found in environments ranging from soil and oceans to the human gut. It is estimated that the number of bacteriophages is 10 times more than that of bacteria [@HaojieGe].
 
-### Phages in combating Antimicrobial Resistence
+### **Phages in combating Antimicrobial Resistence**
 
 Antimicrobial resistance (AMR) is when microorganisms like bacteria, viruses, fungi, or parasites evolve to resist the effects of drugs that were once effective at killing or controlling them. AMR is a natural process that happens over time through genetic changes in pathogens. Its emergence and spread is accelerated by human activity, mainly the misuse and overuse of antimicrobials to treat, prevent or control infections in humans, animals and plants. The World Health Organization has recognised AMR as a "global health crisis", estimated to cause 10 million deaths annually by 2050 if left unchecked [@WHO].
 
@@ -49,9 +49,9 @@ Scientists are developing phage libraries, engineered phages, and phage-antibiot
 
 ## References
 
-[HaojieGe] : https://www.sciencedirect.com/science/article/pii/S0944501319306135#bib0160
-[WHO] : https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance
-[phagetherapy] : https://pmc.ncbi.nlm.nih.gov/articles/PMC5547374/#:~:text=Conventionally%2C%20phage%20therapy%20relies%20on,and%20purified%20phage%20lytic%20proteins.
+[@HaojieGe] : https://www.sciencedirect.com/science/article/pii/S0944501319306135#bib0160
+[@WHO] : https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance
+[@phagetherapy] : https://pmc.ncbi.nlm.nih.gov/articles/PMC5547374/#:~:text=Conventionally%2C%20phage%20therapy%20relies%20on,and%20purified%20phage%20lytic%20proteins.
 
 ---
 
