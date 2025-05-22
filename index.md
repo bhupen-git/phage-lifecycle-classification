@@ -3,6 +3,7 @@ layout: default
 title: Phage Lifecycle Project
 ---
 
+![Phage cover](./assets/images/phage-bacteriophage-main.jpg)
 # 🧬 Phage Lifecycle Classification
 
 Welcome to my data science project exploring bacteriophage life cycles using machine learning.
