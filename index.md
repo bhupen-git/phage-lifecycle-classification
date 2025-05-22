@@ -30,11 +30,11 @@ Welcome to my data science project exploring bacteriophage life cycles using Lar
 
 ## Bacteriophages
 
-### **What are they?**
+### What are they?
 
 Bacteriophages, or simply phages, are viruses that specifically infect and replicate within bacteria. They are among the most abundant biological entities on Earth, found in environments ranging from soil and oceans to the human gut. It is estimated that the number of bacteriophages is 10 times more than that of bacteria [@HaojieGe].
 
-### **Phages in combating Antimicrobial Resistence**
+### Phages in combating Antimicrobial Resistence
 
 Antimicrobial resistance (AMR) is when microorganisms like bacteria, viruses, fungi, or parasites evolve to resist the effects of drugs that were once effective at killing or controlling them. AMR is a natural process that happens over time through genetic changes in pathogens. Its emergence and spread is accelerated by human activity, mainly the misuse and overuse of antimicrobials to treat, prevent or control infections in humans, animals and plants. The World Health Organization has recognised AMR as a "global health crisis", estimated to cause 10 million deaths annually by 2050 if left unchecked [@WHO].
 
@@ -46,6 +46,20 @@ Bacteriophages offer a promising alternative because of their natural ability to
 
 Scientists are developing phage libraries, engineered phages, and phage-antibiotic combinations to improve therapeutic effectiveness and reduce resistance risk. This is still a very active field of research.
 
+### Phage lifecycle
+
+Bacteriophages (phages) follow two main life cycles when infecting bacteria: the **lytic** and **lysogenic cycles**.
+
+- In the **lytic cycle**, a phage takes over the host’s cellular machinery to produce new viral particles, ultimately causing the bacterial cell to burst (lyse) and release the newly formed phages.
+- In the **lysogenic cycle**, the phage integrates its DNA into the host genome, allowing it to replicate passively with the host until certain conditions trigger it to enter the lytic phase.
+
+Understanding a phage’s lifecycle is crucial because it determines:
+
+- **Therapeutic potential**: Lytic phages are preferred for phage therapy since they actively kill bacteria.
+- **Genetic risk**: Lysogenic phages can transfer genes, including those linked to antibiotic resistance or toxins.
+
+![Phage lifecycle](assets/images/Lytic-and-lysogenic-life-cycle-of-bacteriophage.png)
+*Figure : Source : [Bacteriophages in nature: recent advances in research tools and diverse environmental and biotechnological applications](https://link.springer.com/article/10.1007/s11356-024-32535-3)*
 
 ## References
 
