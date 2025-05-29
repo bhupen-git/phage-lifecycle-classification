@@ -58,7 +58,10 @@ Understanding a phage’s lifecycle is crucial because it determines:
 - **Therapeutic potential**: Lytic phages are preferred for phage therapy since they actively kill bacteria.
 - **Genetic risk**: Lysogenic phages can transfer genes, including those linked to antibiotic resistance or toxins.
 
-<img src="assets/images/phage_cycle.png" alt="Phage Lifecycle" width="500"/>
+<p align="center">
+  <img src="assets/images/phage_cycle.png" alt="Phage Lifecycle" style="width:400px;">
+</p>
+
 *Figure : Source : [Bacteriophages in nature: recent advances in research tools and diverse environmental and biotechnological applications](https://link.springer.com/article/10.1007/s11356-024-32535-3)*
 
 ## 2. Workflow
