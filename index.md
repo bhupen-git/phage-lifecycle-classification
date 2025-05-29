@@ -28,13 +28,13 @@ Welcome to my data science project exploring bacteriophage life cycles using Lar
 - **Deep learning** : fair-esm
 - **Machine learning** : XGBoost, scikit-learn
 
-## Bacteriophages
+## 🦠 1. Bacteriophages
 
-### What are they?
+### 1.1 What are they?
 
 Bacteriophages, or simply phages, are viruses that specifically infect and replicate within bacteria. They are among the most abundant biological entities on Earth, found in environments ranging from soil and oceans to the human gut. It is estimated that the number of bacteriophages is 10 times more than that of bacteria [@HaojieGe].
 
-### Phages in combating Antimicrobial Resistence
+### 1.2 Phages in combating Antimicrobial Resistence
 
 Antimicrobial resistance (AMR) is when microorganisms like bacteria, viruses, fungi, or parasites evolve to resist the effects of drugs that were once effective at killing or controlling them. AMR is a natural process that happens over time through genetic changes in pathogens. Its emergence and spread is accelerated by human activity, mainly the misuse and overuse of antimicrobials to treat, prevent or control infections in humans, animals and plants. The World Health Organization has recognised AMR as a "global health crisis", estimated to cause 10 million deaths annually by 2050 if left unchecked [@WHO].
 
@@ -46,7 +46,7 @@ Bacteriophages offer a promising alternative because of their natural ability to
 
 Scientists are developing phage libraries, engineered phages, and phage-antibiotic combinations to improve therapeutic effectiveness and reduce resistance risk. This is still a very active field of research.
 
-### Phage lifecycle
+### 1.3 Phage lifecycle
 
 Bacteriophages (phages) follow two main life cycles when infecting bacteria: the **lytic** and **lysogenic cycles**.
 
@@ -58,16 +58,16 @@ Understanding a phage’s lifecycle is crucial because it determines:
 - **Therapeutic potential**: Lytic phages are preferred for phage therapy since they actively kill bacteria.
 - **Genetic risk**: Lysogenic phages can transfer genes, including those linked to antibiotic resistance or toxins.
 
-![Phage lifecycle](assets/images/Lytic-and-lysogenic-life-cycle-of-bacteriophage.png)
+<img src="assets/images/phage_cycle.png" alt="Phage Lifecycle" width="500"/>
 *Figure : Source : [Bacteriophages in nature: recent advances in research tools and diverse environmental and biotechnological applications](https://link.springer.com/article/10.1007/s11356-024-32535-3)*
 
-## Workflow
+## 2. Workflow
 
 ![workflow](assets/images/workflow.png)
 
-## Notebook walkthrough
+## 3. Notebook walkthrough
 
-### Extracting the protein sequences
+### 3.1 Extracting the protein sequences
 
 The data we will use is stored in the 'data' directory as 4 multi-fasta files - 'Dataset-1_temperate.fasta' , 'Dataset-2_temperate.fasta', 'Dataset-1_virulent.fasta' and 'Dataset-2_virulent.fasta' corresponding to the 2 types of phage lifecycles (*temperate = lysogenic and virulent = lytic*).
 
@@ -83,7 +83,7 @@ prodigal -i 'path-to-your-fasta' -a 'path-to-your-faa' -p meta
 
 This will generate 4 files with amino acid sequences in the 'proteins' directory.
 
-### Extracting embeddings
+### 3.2 Extracting embeddings
 
 To extract embeddings we will now use Evolutionary Scale Modelling. These are Large Language Models which are trained on a large number of protein sequences. In particular, we will use [ESM-2](https://github.com/facebookresearch/esm?tab=readme-ov-file#available) (esm2_t6_8M_UR50D) which has 8M parameters and an embedding dimension of 320. There are of course larger models with a higher embedding dimension but even a light weight model like this gets the job done in this case.
 
@@ -96,6 +96,14 @@ In the [notebook](./phage_lifecycle_hackthon25.ipynb), the function 'extract_emb
 Since we get multiple embedding vectors for each phage, we take the mean of these vectors to extract a single vector per phage. Resulting in a dataframe which looks like :
 
 ![dataframe](assets/images/dataframe.png)
+
+## 4. Classifier
+
+Once we have the dataframe setup, training a classifier is quite straightforward. Here by cross-validating a basic XGBoost classifier (without finetuning) we reach an accuracy of 91% !
+
+Confusion Matrix :
+
+![Confusion matrix](assets/images/confusionm.png)
 
 ## References
 
