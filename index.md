@@ -65,6 +65,24 @@ Understanding a phage’s lifecycle is crucial because it determines:
 
 ![workflow](assets/images/workflow.png)
 
+## Notebook walkthrough
+
+### Extracting the protein sequences
+
+The data we will use is stored in the 'data' directory as 4 multi-fasta files - 'Dataset-1_temperate.fasta' , 'Dataset-2_temperate.fasta', 'Dataset-1_virulent.fasta' and 'Dataset-2_virulent.fasta' corresponding to the 2 types of phage lifecycles (*temperate = lysogenic and virulent = lytic*).
+
+This is the typical format of a fasta file :
+
+![fasta example](assets/images/fastafiledemo.png)
+
+We will use a library called *[Prodigal](https://github.com/hyattpd/Prodigal)* to extract the amino acid sequences and store them in the same 'proteins' directory as fasta files (*with an extension .faa*).
+
+``` bash
+prodigal -i 'path-to-your-fasta' -a 'path-to-your-faa' -p meta
+```
+
+This will generate 4 files with amino acid sequences in the 'proteins' directory.
+
 ## References
 
 [@HaojieGe] : https://www.sciencedirect.com/science/article/pii/S0944501319306135#bib0160
