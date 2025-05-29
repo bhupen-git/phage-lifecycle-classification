@@ -83,6 +83,20 @@ prodigal -i 'path-to-your-fasta' -a 'path-to-your-faa' -p meta
 
 This will generate 4 files with amino acid sequences in the 'proteins' directory.
 
+### Extracting embeddings
+
+To extract embeddings we will now use Evolutionary Scale Modelling. These are Large Language Models which are trained on a large number of protein sequences. In particular, we will use [ESM-2](https://github.com/facebookresearch/esm?tab=readme-ov-file#available) (esm2_t6_8M_UR50D) which has 8M parameters and an embedding dimension of 320. There are of course larger models with a higher embedding dimension but even a light weight model like this gets the job done in this case.
+
+Even for a smaller pre-trained model like this it is advisable to make use of a GPU.
+
+Since this is a time consuming step which we will perform only once before feeding it to a classifier, it is strongly recommended to store the embeddings (which are nothing but pytorch tensors) on the disk.
+
+In the [notebook](./phage_lifecycle_hackthon25.ipynb), the function 'extract_embeddings' stores the embeddings for all the proteins per phage in seperate files labelled by the phage IDs.
+
+Since we get multiple embedding vectors for each phage, we take the mean of these vectors to extract a single vector per phage. Resulting in a dataframe which looks like :
+
+![dataframe](assets/images/dataframe.png)
+
 ## References
 
 [@HaojieGe] : https://www.sciencedirect.com/science/article/pii/S0944501319306135#bib0160
