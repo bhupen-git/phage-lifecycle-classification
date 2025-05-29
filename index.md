@@ -61,6 +61,10 @@ Understanding a phage’s lifecycle is crucial because it determines:
 ![Phage lifecycle](assets/images/Lytic-and-lysogenic-life-cycle-of-bacteriophage.png)
 *Figure : Source : [Bacteriophages in nature: recent advances in research tools and diverse environmental and biotechnological applications](https://link.springer.com/article/10.1007/s11356-024-32535-3)*
 
+## Workflow
+
+![workflow](assets/images/workflow.png)
+
 ## References
 
 [@HaojieGe] : https://www.sciencedirect.com/science/article/pii/S0944501319306135#bib0160
