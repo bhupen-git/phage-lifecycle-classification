@@ -1,8 +1,3 @@
----
-layout: default
-title: Phage Lifecycle Project
----
-
 ![Phage cover](assets/images/phage-bacteriophage-main.jpg)
 # 🧬 Phage Lifecycle Classification
 
@@ -114,7 +109,3 @@ Confusion Matrix :
 [2] : https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance
 
 [3] : https://pmc.ncbi.nlm.nih.gov/articles/PMC5547374/#:~:text=Conventionally%2C%20phage%20therapy%20relies%20on,and%20purified%20phage%20lytic%20proteins.
-
----
-
-_This portfolio was built using [Jekyll](https://jekyllrb.com) and hosted via [GitHub Pages](https://pages.github.com)._ ✨
